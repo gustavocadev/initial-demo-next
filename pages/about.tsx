@@ -1,6 +1,7 @@
 import { NextPage } from "next"
 import DarkLayout from "../components/layouts/DarkLayout"
 import MainLayout from "../components/layouts/MainLayout"
+import { ReactNode } from "react"
 
 type Props = {
   children: React.ReactNode
@@ -18,7 +19,7 @@ export default function AboutPage() {
   )
 }
 
-AboutPage.getLayout = function getLayout(page: React.ReactNode) {
+AboutPage.getLayout = function getLayout(page: ReactNode) {
   return (
     <MainLayout>
       <DarkLayout>{page}</DarkLayout>
