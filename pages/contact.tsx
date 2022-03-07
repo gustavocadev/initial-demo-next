@@ -1,10 +1,11 @@
-import type { NextPage } from "next"
+import React from "react"
 import MainLayout from "../components/layouts/MainLayout"
+import Link from "next/link"
 
-const Home: NextPage = () => {
+export default function Contact() {
   return (
     <MainLayout>
-      <h1 className="title">Home Page</h1>
+      <h1 className="title">Contact Page</h1>
 
       <p className="description">
         Get started by editing <code className="code">pages/index.tsx</code>
@@ -12,5 +13,3 @@ const Home: NextPage = () => {
     </MainLayout>
   )
 }
-
-export default Home
